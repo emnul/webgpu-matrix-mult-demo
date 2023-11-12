@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/rat.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>Matrix Multiplication Benchmarking with GPU Compute</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="data-container">
+        <div class="results-container">
+          <h2>CPU Matrix Multiplication Compute Time</h2>
+          <div id="cpu-time">0ms</div>
+        </div>
+        
+        <div class="results-container">
+          <h2>GPU Matrix Multiplication Compute Time</h2>
+          <div id="gpu-time">0ms</div>
+        </div>
+      </div>
+      
+      <form id="form">
+        <label for="options">Select Matrix Size:</label>
+        <select name="options" id="options">
+          <option value="128">128x128</option>
+          <option value="256">256x256</option>
+          <option value="512">512x512</option>
+          <option value="1024">1024x1024</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Run Benchmark">
+      </form>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
