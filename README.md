@@ -1,0 +1,1 @@
+This repository is a simple extension of the demo provided by [@beaufortfrancois](https://github.com/beaufortfrancois) in his article [Get started with GPU Compute on the web](https://developer.chrome.com/articles/gpu-compute/)
